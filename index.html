@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <title>Racing Frogs</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="site.css">
 </head>
 
 <body ng-controller="MainController as vm">
+    <div class="welcome">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h1>!!! WELCOME TO THE FROG RACES !!!</h1> 
+            </div>
+            <div class="panel-body">
+                JESSE "THE BODY" VENTURA
+            </div>
+        
+        <div class="panel-footer"><span class="btn btn-info" ng-click="startRace">START THE RACE</span></div>
+        
+        </div>
+    </div>
+    <br>
     <div class="container">
         <div class="panel panel-primary">
             <div class="panel-heading">
@@ -23,8 +37,9 @@
                 <p>
                     The bank has {{ vm.bank }}
                 </p>
+                <span class="btn btn-success" ng-click="showItems = !showItems">Show Items</span>
             </div>
-            <div class="panel-footer">
+            <div class="panel-footer" ng-show="showItems">
                 <span class="btn btn-default" ng-click="vm.giveMoneyToJoe()">Give $10 to Joe</span>
                 <span class="btn btn-default" ng-click="vm.receiveMoneyFromBob()">Receive $5 from Bob</span>
             </div>
