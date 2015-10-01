@@ -44,4 +44,23 @@ function MainController() {
         vm.bank += vm.bob.giveCash(5)
     }
 
+
+
+    vm.frogs = [
+        { name: "Romsies", posX: 1 },
+        { name: "Other Country", posX: 1 },
+        { name: "Little Country", posX: 1 },
+        { name: "Big Country", posX: 1 }
+    ]
+
+ var moveFrogs = function() {
+        for(var i=0; i<vm.frogs.length; i++){
+            var frog = vm.frogs[i]
+           frog.posX += Math.random()* 10;
+        }
+    }
+    
+    vm.startRace = function(){
+        moveFrogs();
+    }
 }

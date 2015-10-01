@@ -1,7 +1,31 @@
 body{
-	background: slategrey
+	background-image: url("water2.png");
+	background-size: cover;
 }
 .welcome{
-	width: 900px;
-	margin: auto;
+	width: 1150px;
+	margin: auto;	
+}
+.panel-heading{
+	text-align: center;
+}
+.table{
+	border: dashed;
+	
+}
+
+.frog{
+	position: absolute;
+	left: 0;
+	top: 13px;
+	background-color: green;
+	height: 20px;
+	width: 20px;
+}
+
+.frog-lane{
+	position: relative;
+	width: 100%;
+	border: 1px dashed black;
+	height: 80px;
 }
