@@ -17,7 +17,7 @@ body{
 .frog{
 	position: absolute;
 	left: 0;
-	top: 13px;
+	top: 4px;
 	background-color: green;
 	height: 20px;
 	width: 20px;
@@ -26,6 +26,6 @@ body{
 .frog-lane{
 	position: relative;
 	width: 100%;
-	border: 1px dashed black;
+	border: 3px dashed black;
 	height: 80px;
 }

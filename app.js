@@ -44,7 +44,7 @@ function MainController() {
         vm.bank += vm.bob.giveCash(5)
     }
 
-
+   var finish = 88;
 
     vm.frogs = [
         { name: "Romsies", posX: 1 },
@@ -57,6 +57,9 @@ function MainController() {
         for(var i=0; i<vm.frogs.length; i++){
             var frog = vm.frogs[i]
            frog.posX += Math.random()* 10;
+           if(frog.posX>=finish){
+               alert("WINNER WINNER CHICKEN DINNER GOES TO " + frog.name + " !!!!")
+           }
         }
     }
     
